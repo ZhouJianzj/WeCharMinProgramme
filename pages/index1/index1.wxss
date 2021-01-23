@@ -1,1 +1,28 @@
 /* pages/index1/index1.wxss */
+.className1{
+        /* 设置展示的布局效果 */
+        display: flex;
+        /* 拉伸布局的方向 */
+        flex-direction: column;
+        /* 对齐方式 */
+        align-items: center;
+}
+.classNameImage{
+        width: 128rpx;
+        height: 128rpx;
+        border-radius: 50%;
+        /* 上下的间隔 */
+        margin: 80rpx;
+
+}
+.className2{
+        width: 300rpx;
+        height: 80rpx;
+        /* 设置的是文字在文本框中的高度 */
+        line-height: 80rpx;
+        text-align: center;
+        border: 1px solid black;
+        
+        margin: 500rpx;
+        background: cadetblue;
+}
