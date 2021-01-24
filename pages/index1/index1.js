@@ -5,14 +5,54 @@ Page({
          * 页面的初始数据
          */
         data: {
-
+             
+                loading :"Welcome",
+                userInfo :{}
         },
+
+        // 点击事件的绑定,使用到的冒泡事件
+        parent(){
+                wx.redirectTo({
+                        url: '/pages/index2/index2',
+                      })
+        },
+        child(){
+               
+        },
+
+      getInfo(reInfo){
+            console.log(reInfo)
+        //     获取用户的信息，并且有返回值，再把值传递给reInfo
+            if(reInfo.detail.userInfo){
+                    this.setData({
+                            userInfo : reInfo.detail.userInfo
+                    })
+            }
+      },
 
         /**
          * 生命周期函数--监听页面加载
          */
         onLoad: function (options) {
-
+                // 得到数据
+                // console.log(this.data.msg);
+                // 设置数据
+                this.setData({
+                        msg : "maopaihaoren"
+                })
+                // 下面的是为了在登录一次成功之后就不需要再次的登录了
+                wx.getUserInfo({
+                        // 下面传输的数据是成功就设置变量userInfo为获取到的数据
+                  success:(reInfo)=>{
+                          this.setData({
+                                  reInfo :reInfo.userInfo
+                          })
+                  },
+                  fail : (err)=>{
+                          console.log("没有授权")
+                  }
+                })
+                
         },
 
         /**
