@@ -6,12 +6,13 @@ Page({
          */
         data: {
              
-                loading :"Welcome",
+                loading :"点击到下一个页面",
                 userInfo :{}
         },
 
         // 点击事件的绑定,使用到的冒泡事件
         parent(){
+                // 页面的跳转 这个是销毁之前的页面，navigateTo是不是销毁
                 wx.redirectTo({
                         url: '/pages/index2/index2',
                       })
@@ -21,7 +22,7 @@ Page({
         },
 
       getInfo(reInfo){
-            console.log(reInfo)
+          
         //     获取用户的信息，并且有返回值，再把值传递给reInfo
             if(reInfo.detail.userInfo){
                     this.setData({

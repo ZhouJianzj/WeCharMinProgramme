@@ -2,8 +2,10 @@
 
 <view class="className1">
         <image wx:if="{{userInfo.avatarUrl}}" class="classNameImage" src="{{userInfo.avatarUrl}}"></image>
+
         <!-- 下面绑定的事件是得到用户数据的信息，开放的接口是下面的 -->
         <button wx:else bindgetuserinfo="getInfo" open-type="getUserInfo">获取用户信息</button>
+        
         <text>{{userInfo.nickName}}</text>
         <view class="className2"bindtap = "parent" >
         <!-- 使用了动态的数据绑定 -->
