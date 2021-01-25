@@ -1,0 +1,7 @@
+<view class = "jT2">
+        <text class="title">{{one}}</text>
+        <view >
+                <text>{{two}}</text>
+                <text class="jT2Right">查看更多</text>
+        </view>
+</view>

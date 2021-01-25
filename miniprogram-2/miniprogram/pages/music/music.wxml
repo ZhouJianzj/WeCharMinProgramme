@@ -1,0 +1,16 @@
+<!--pages/music/music.wxml-->
+<swiper class="swiperClass" indicator-dots indicator-color ='ivory' indicator-active-color= '#d43c33'  autoplay>
+               
+               <swiper-item> 
+                       <image src="miniprogram\images\swiperPIc\2.jpg"></image>
+               </swiper-item>
+               <swiper-item> 
+                       <image src="miniprogram\images\swiperPIc\2.jpg"></image>
+               </swiper-item>
+               
+               <swiper-item> 
+                       <image src="miniprogram\images\swiperPIc\2.jpg"></image>
+               </swiper-item>
+               
+               
+       </swiper>

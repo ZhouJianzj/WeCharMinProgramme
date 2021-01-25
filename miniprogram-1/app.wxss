@@ -1,0 +1,5 @@
+/* 小程序的全局样式，也就是存放公共的样式的地方 */
+@import"/img/iconfont.wxss";
+page{
+        height: 100%;
+}

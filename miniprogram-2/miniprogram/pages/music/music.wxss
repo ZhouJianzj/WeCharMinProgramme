@@ -1,0 +1,10 @@
+/* pages/music/music.wxss */
+.swiperViewClass{
+        width: 100%;
+        height: 300rpx;
+}
+/* 这里的使用的是swiper的classname但是设置的是image的css */
+.swiperClass image{
+        width: 100%;
+        height: 100%;
+}
