@@ -1,6 +1,7 @@
 {
   "usingComponents": {
-    "playList":"/components/playList/playList"
+    "playList":"/components/playList/playList",
+    "title":"/components/title/title"
   }
  
 }

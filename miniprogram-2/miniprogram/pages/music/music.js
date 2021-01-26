@@ -5,9 +5,11 @@ Page({
          * 页面的初始数据
          */
         data: {
+                // 顶部滚动条的图片数据
                 imageUrl:[
                         {
-                                url:"http://p1.music.126.net/SLfispSeeEnb6Ezs0cNjBw==/109951165666128356.jpg?imageView&quality=89"
+                                url:"http://p1.music.126.net/SLfispSeeEnb6Ezs0cNjBw==/109951165666128356.jpg?imageView&quality=89",
+                                
                         },{
                                 url:"http://p1.music.126.net/q5rKcBx9Y0V37DsUSaQKXg==/109951165664695730.jpg?imageView&quality=89"
                         },{
@@ -24,6 +26,7 @@ Page({
                                 url:"http://p1.music.126.net/vAjwukVm-H0LOqzy4FTJXA==/109951165664851877.jpg?imageView&quality=89"
                         }
                 ],
+                // 下面playList图片后相应的说明
                 playList:[
                         {
                           "id":"01",
@@ -56,6 +59,22 @@ Page({
                           "name":"鸡你太美！",
                           "picUrl":"http://p1.music.126.net/uesfHcJmZ23S3er_1mpeaw==/109951165621856219.jpg?param=140y140"
                         }
+                ],
+                // 底部的排行榜
+                rankingList:[
+                        {url:"http://p3.music.126.net/DrRIg6CrgDfVLEph9SNh7w==/18696095720518497.jpg?param=100y100",
+                        number:1,
+                        name:"思"
+                },
+                        {url:"http://p4.music.126.net/N2HO5xfYEqyQ8q6oxCw8IQ==/18713687906568048.jpg?param=100y100",
+                        number:2,
+                        name:"相"
+                },
+                        {url:"http://p4.music.126.net/sBzD11nforcuh1jdLSgX7g==/18740076185638788.jpg?param=100y100",
+                        number:3,
+                        name:"望"
+                },
+                
                 ]
 
         },

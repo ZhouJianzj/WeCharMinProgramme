@@ -7,10 +7,25 @@
                <image src="{{item.url}}" class="image"></image> 
         </swiper-item>
 </swiper>
-<text class="title">场景音乐</text>
+<title head="推荐歌曲" headLeft="为你精心推荐"></title>
 <view class="playList">
         <block wx:for="{{playList}}" wx:key = "id">
                 <playList playList="{{item}}">
                 </playList>
         </block>
+</view>
+<title head="排行榜" headLeft="热歌方向标"></title>
+<!-- 底部的排行界面 -->
+<view class="ranking">
+       <swiper circular next-margin ="300rpx">
+               <swiper-item wx:for="{{rankingList}}">
+                                <image class="ranking-image" src="{{item.url}}"></image>
+                        <view class="ranking-text" >
+                                <text class="ranking-number">{{item.number}}</text>
+                                <text class="ranking-name">{{item.name}}</text>
+                        </view>
+               </swiper-item>
+       </swiper>
+        
+       
 </view>

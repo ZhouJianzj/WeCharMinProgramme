@@ -20,3 +20,23 @@
         margin-top:10rpx ;
         margin-left:20rpx ;
 }
+/* 排行榜的css */
+.ranking{
+       padding: 20rpx;
+        height: 450rpx;
+}
+.ranking-image{
+        width: 100rpx;
+        height: 100rpx;
+}
+ .rankingtext .ranking-number{
+        width: 100rpx;
+        height: 100rpx;
+        text-align: center;
+        line-height: 100rpx;
+        padding: 20rpx;
+}
+.rankingtext .ranking-name{
+        height: 100rpx;
+        line-height: 100rpx;
+}
