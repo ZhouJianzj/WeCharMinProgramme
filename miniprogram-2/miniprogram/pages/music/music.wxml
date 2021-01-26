@@ -1,16 +1,16 @@
 <!--pages/music/music.wxml-->
-<swiper class="swiperClass" indicator-dots indicator-color ='ivory' indicator-active-color= '#d43c33'  autoplay>
-               
-               <swiper-item> 
-                       <image src="miniprogram\images\swiperPIc\2.jpg"></image>
-               </swiper-item>
-               <swiper-item> 
-                       <image src="miniprogram\images\swiperPIc\2.jpg"></image>
-               </swiper-item>
-               
-               <swiper-item> 
-                       <image src="miniprogram\images\swiperPIc\2.jpg"></image>
-               </swiper-item>
-               
-               
-       </swiper>
+<!-- 滑动面面板的主键，里面用到的属有小圆点，选中小圆点的颜色，自动播放，播放的时间间隔，滑动切换的时间 -->
+<swiper indicator-dots="true" indicator-active-color="#d43c33" autoplay="true" interval="3000" duration="1000" class="swiper">
+        <!--下面使用到了微信的for循环一个数组-->
+        <swiper-item wx:for="{{imageUrl}}">
+                <!-- 下面的是数组中每一个元素的属性 -->
+               <image src="{{item.url}}" class="image"></image> 
+        </swiper-item>
+</swiper>
+<text class="title">场景音乐</text>
+<view class="playList">
+        <block wx:for="{{playList}}" wx:key = "id">
+                <playList playList="{{item}}">
+                </playList>
+        </block>
+</view>

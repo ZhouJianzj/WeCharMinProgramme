@@ -1,10 +1,22 @@
 /* pages/music/music.wxss */
-.swiperViewClass{
+/* 下面是swiper也就是music页面中顶部的滑动面板css */
+.swiper{
         width: 100%;
         height: 300rpx;
 }
-/* 这里的使用的是swiper的classname但是设置的是image的css */
-.swiperClass image{
+.image{
         width: 100%;
         height: 100%;
+}
+
+/* playList自定义组件的布局 */
+.playList{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top:10rpx ;
+}
+.title{
+        margin-top:10rpx ;
+        margin-left:20rpx ;
 }
