@@ -4,12 +4,12 @@
         <!--下面使用到了微信的for循环一个数组-->
         <swiper-item wx:for="{{imageUrl}}">
                 <!-- 下面的是数组中每一个元素的属性 -->
-               <image src="{{item.url}}" class="image"></image> 
+               <image src="{{item.pic}}" class="image"></image> 
         </swiper-item>
 </swiper>
 <title head="推荐歌曲" headLeft="为你精心推荐"></title>
 <view class="playList">
-        <block wx:for="{{playList}}" wx:key = "id">
+        <block wx:for="{{playList}}" wx:key = "_id">
                 <playList playList="{{item}}">
                 </playList>
         </block>

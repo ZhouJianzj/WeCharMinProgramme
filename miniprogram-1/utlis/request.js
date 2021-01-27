@@ -11,23 +11,23 @@
         将动态的数据抽取成props参数，由使用者根据自身的情况一标签的形式传入
  */
 
- 
+//  在哪使用请求需要在哪导入这个包
 // import config from './config'
-// export default (url,data={},method = "get") =>{
-//         // 请求是异步的
-//        return new Promise((resolve,reject)=>{ 
-//         wx.request({
-//                 url,
-//                 data,
-//                 method,
-//                 success:(res)=>{
-//                         console.log("请求成功！",res)
-//                         resolve(res.data)
-//                 },
-//                 fail:(err)=>{
-//                         console.lo("请求失败！",err)
-//                         reject(res)
-//                 }
-//               })
-//        })
-// }
+export default (url,data={},method = "get") =>{
+        // 请求是异步的
+
+        wx.request({
+                url,
+                data,
+                method,
+                success:(res)=>{
+                        console.log("请求成功！",res)
+                       
+                },
+                fail:(err)=>{
+                        console.lo("请求失败！",err)
+                       
+                }
+              })
+    
+}

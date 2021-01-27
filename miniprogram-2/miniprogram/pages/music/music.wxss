@@ -26,8 +26,8 @@
         height: 450rpx;
 }
 .ranking-image{
-        width: 100rpx;
-        height: 100rpx;
+        width: 150rpx;
+        height: 150rpx;
 }
  .rankingtext .ranking-number{
         width: 100rpx;

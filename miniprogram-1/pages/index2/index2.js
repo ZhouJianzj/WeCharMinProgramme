@@ -1,5 +1,5 @@
+const { from } = require("form-data")
 
-// pages/index2/index2.js
 // import request from '../../utlis/request'
 Page({
 
@@ -14,9 +14,20 @@ Page({
          * 生命周期函数--监听页面加载
          */
         onLoad:  function (options) {
-                // async
-                // let result = await request('http://localhost:3000/banner',{type:2})
-                // console.log(result)
+                
+                wx.request({
+                        url :'http://localhost:3000/banner',
+                        data :{type:2},
+                        success:(res)=>{
+                                console.log("请求成功！",res)
+                               
+                        },
+                        fail:(err)=>{
+                                console.lo("请求失败！",err)
+                               
+                        }
+                      })
+                
         },
 
         /**
