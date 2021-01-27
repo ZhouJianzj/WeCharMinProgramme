@@ -1,0 +1,8 @@
+<!--components/title/title.wxml-->
+<view class="title">
+        <text class="title-head">{{head}}</text>
+        <view>
+                <text class="title-headLeft">{{headLeft}}</text>
+                <text class="title-headRight">更多</text>
+        </view>
+</view>
