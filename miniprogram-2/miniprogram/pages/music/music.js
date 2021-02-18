@@ -1,4 +1,6 @@
 // pages/music/music.js
+const MAX_LIMIT =15
+const db = wx.cloud.database()
 Page({
 
         /**
@@ -87,14 +89,17 @@ Page({
          * 页面相关事件处理函数--监听用户下拉动作
          */
         onPullDownRefresh: function () {
-
+                        this.setData({
+                                playList:[]
+                        })
+                        this._getPlayList
         },
 
         /**
          * 页面上拉触底事件的处理函数
          */
         onReachBottom: function () {
-
+                this._getPlayList()
         },
 
         /**
@@ -106,7 +111,12 @@ Page({
                         title: '加载中',
                       })
                       wx.cloud.callFunction({
-                       name:'playlist'
+                       name:'music',
+                       data:{
+                               start:this.data.playList.length,
+                               count:MAX_LIMIT,
+                               $url:'playlist'
+                       }
                       }).then((res)=>{
                               console.log(res)
                               this.setData({

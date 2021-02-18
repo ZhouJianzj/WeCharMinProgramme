@@ -2,6 +2,7 @@
   "usingComponents": {
     "playList":"/components/playList/playList",
     "title":"/components/title/title"
-  }
+  },
+  "enablePullDownRefresh":true
  
 }
